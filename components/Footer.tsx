@@ -3,6 +3,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/content/translations';
 import { Mail, Linkedin, Heart } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   const { language } = useLanguage();
@@ -11,6 +12,23 @@ export default function Footer() {
   return (
     <footer className="bg-text-dark text-white py-12">
       <div className="max-w-7xl mx-auto px-6">
+        {/* Footer Navigation */}
+        <div className="flex justify-center mb-8">
+          <nav className="flex items-center gap-2 text-sm text-white/70">
+            <Link href="/" className="hover:text-primary-turquoise transition-colors">
+              {t.home}
+            </Link>
+            <span>|</span>
+            <Link href="/#tools" className="hover:text-primary-turquoise transition-colors">
+              {t.myTools}
+            </Link>
+            <span>|</span>
+            <Link href="/resources" className="hover:text-primary-turquoise transition-colors">
+              {translations[language].nav.resources}
+            </Link>
+          </nav>
+        </div>
+
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <p className="text-lg font-semibold mb-2">Shai Tamam</p>

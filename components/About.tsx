@@ -19,15 +19,9 @@ export default function About() {
         </div>
 
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100">
-          <p className="text-lg text-text-dark leading-relaxed mb-6">
+          <p className="text-lg text-text-dark leading-relaxed">
             {t.bio}
           </p>
-
-          <div className="mt-8 pt-8 border-t border-gray-200">
-            <p className="text-base text-text-medium font-medium">
-              {t.currentRoles}
-            </p>
-          </div>
         </div>
       </div>
     </section>
