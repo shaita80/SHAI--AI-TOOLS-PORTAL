@@ -34,6 +34,10 @@ export const translations = {
         name: 'Clinical Article Appraisal',
         description: 'Structured tool for critical appraisal of clinical-pharmacology articles. Generates detailed report (600-800 words) including: Highlights (3-5 key findings), and systematic analysis of 8 categories - Abstract, Introduction, Methods, Results, Discussion, Limitations, Funding/COI, and Critical Appraisal (Validity & Bias). Based solely on article content with exact citations (effect estimates, CI, p-values in LaTeX format).',
       },
+      tool5: {
+        name: 'Find My Journal',
+        description: 'Intelligent academic publishing advisor that helps identify the most suitable journals for your manuscript. Acts as a \'meta-agent\' searching multiple journal finder tools (Elsevier, Springer Nature, JANE, Wiley) and synthesizes results into strategic recommendations. Analyzes your title and abstract, then categorizes 4-6 journals into three tiers: Top-Tier & Best Fit, Broad Audience, and Niche Journals. Provides verified scope, impact metrics (IF/CiteScore), and target audience for each recommendation. Fully multilingual.',
+      },
     },
     footer: {
       copyright: '© 2025 Shai Tamam. All rights reserved.',
@@ -175,6 +179,10 @@ export const translations = {
         name: 'הערכה ביקורתית של מאמרים',
         description: 'כלי מובנה להערכת איכות מאמרים קליניים-פרמקולוגיים. מייצר דוח מפורט הכולל: Highlights (3-5 ממצאים מרכזיים), וניתוח שיטתי של 8 קטגוריות. הכלי מבוסס אך ורק על תוכן המאמר, כולל ציטוטים מדויקים של תוצאות ומסיים בהערכת חוזק הראיות.',
       },
+      tool5: {
+        name: 'מאתר כתבי עת אקדמיים',
+        description: 'יועץ פרסום אקדמי חכם המסייע לזהות את כתבי העת המתאימים ביותר למאמר שלך. פועל כ-\'meta-agent\' - חוקר מספר כלי journal finder (Elsevier, Springer Nature, JANE, Wiley) ומסנתז תוצאות להמלצות אסטרטגיות. מנתח כותרת ותקציר, ומקטלג 4-6 כתבי עת לשלוש רמות: מובילים, קהל רחב, וניש מקצועי. מספק היקף מאומת, מדדי השפעה (IF/CiteScore), וקהל יעד לכל המלצה. דו-לשוני מלא.',
+      },
     },
     footer: {
       copyright: '© 2025 שי תמם. כל הזכויות שמורות.',
@@ -288,6 +296,7 @@ export const toolLinks = [
   'https://gemini.google.com/gem/1uzDVUMu85rTI-aFvs3KeTjAqJR2VJynt',
   'https://gemini.google.com/gem/1yfMT4Lrqs8ExFgml6g58j7GPsIQqHBEt',
   'https://gemini.google.com/gem/13UEV3EZyH0iZl0zNPPFJiK__VLnRGK3I',
+  'https://gemini.google.com/gem/1IF_IwJLaFy1Fg121r-7h7qum6LueUwK0',
 ];
 
 export const resourceLinks = [
