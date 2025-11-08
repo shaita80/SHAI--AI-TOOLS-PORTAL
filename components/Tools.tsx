@@ -2,7 +2,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations, toolLinks } from '@/content/translations';
-import { FileSearch, Search, Filter, FileText, ExternalLink } from 'lucide-react';
+import { FileSearch, Search, Filter, FileText, Newspaper, ExternalLink } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 
 interface Tool {
@@ -40,6 +40,12 @@ export default function Tools() {
       name: t.tool4.name,
       description: t.tool4.description,
       link: toolLinks[3],
+    },
+    {
+      icon: Newspaper,
+      name: t.tool5.name,
+      description: t.tool5.description,
+      link: toolLinks[4],
     },
   ];
 
