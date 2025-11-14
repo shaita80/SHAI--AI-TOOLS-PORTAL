@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import SessionProvider from "@/components/SessionProvider";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -47,7 +48,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased">
-        <LanguageProvider>{children}</LanguageProvider>
+        <SessionProvider>
+          <LanguageProvider>{children}</LanguageProvider>
+        </SessionProvider>
       </body>
     </html>
   );
